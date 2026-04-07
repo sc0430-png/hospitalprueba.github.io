@@ -1,0 +1,309 @@
+/* ======================= RESET ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ======================= NAVBAR ======================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.navbar.solid {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px 50px;
+}
+
+/* Logo */
+.logo {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.logo img {
+    height: 60px;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#006847;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #fff;
+    color: #04ed42;
+}
+
+/* Hamburger */
+#menu-toggle { display: none; }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #000;
+    border-radius: 3px;
+}
+
+/* Responsive Navbar */
+@media (max-width:768px) {
+    .hamburger { display: flex; }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #f6f1f1;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 10px 20px;
+    }
+}
+
+
+/* ======================= RESPONSIVE ======================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    /* Mostrar botón */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Menú móvil */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+    }
+}
+
+/* ================== PROMO SECTION ================== */
+
+.promo-section {
+    padding: 120px 20px 80px;
+    background-color: #f4f6f5;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-card {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* Imagen */
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenido */
+.promo-content {
+    position: relative;
+    padding: 50px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.promo-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.promo-content h1 span {
+    color: #006847;
+}
+
+.promo-content p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Botón principal */
+.primary-btn {
+    background-color: #006847;
+    color: #ffffff;
+    padding: 12px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #004d34;
+}
+
+/* Responsive promo */
+@media (max-width: 768px) {
+
+    .promo-card {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-image img {
+        height: 250px;
+        object-fit: contain;
+        padding: 20px;
+    }
+
+    .promo-content {
+        padding: 30px 20px;
+    }
+}
+/* ======================= FOOTER ======================= */
+
+footer {
+    background: #611232;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact p {
+    font-size: 14px;
+}
+
+/* Logo centrado */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-social img {
+    width: 120px;
+    transition: 0.3s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.08);
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 10px;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

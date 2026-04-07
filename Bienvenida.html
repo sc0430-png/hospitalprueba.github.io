@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CSS (para responsive y estilos base) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="Bienvenida.css" />
+
+    <title>Hospital General de Zona No.2 Apizaco</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+   <nav class="navbar" id="navbar">
+    <div class="logo">
+        <img src="imagenes/IMSS-Logo-tm.png" alt="Logo Seguro Social">
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Menú -->
+    <ul class="nav-links">
+        <li><a href="#">Bienvenida</a></li>
+        <li><a href="Filosofia.html">Filosofía Institucional</a></li>
+        <li><a href="Modelo.html">Modelo Institucional</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Estructura.html">Organigrama Estructural</a></li>
+        <li><a href="Buzon.html">Buzón</a></li>
+    </ul>
+</nav>
+
+    <!-- Sección principal / Hero -->
+   <section class="hero">
+
+    <img src="imagenes/hospital.jpeg" class="hero-img" alt="Hospital IMSS">
+
+    <div class="overlay">
+        <h1>HOSPITAL GENERAL DE ZONA No.2 APIZACO</h1>
+        <h1>Bienvenido</h1>
+        <a href="#about" class="btn-hero">Descubrir más</a>
+    </div>
+
+</section>
+        <!-- Curva decorativa inferior -->
+        
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="content container py-5">
+        <h2 class="mb-4">Sobre Nosotros</h2>
+        <p>Bienvenido al Hospital General de Zona No.2 Apizaco.</p>
+
+        <div class="about-image my-4">
+            <img src="imagenes/mural.jpeg" alt="Hospital General de Zona No.2 Apizaco" class="img-fluid rounded shadow-sm" />
+            <div class="textos-imagen mt-2 d-flex justify-content-between flex-wrap">
+                <p class="autor-left small mb-0">Mural Donado por el Dr. Ramiro Angeles Diaz 19-07-2019</p>
+                <p class="autor-right small mb-0">Pintores Jaime Arroyo Hernandez, David Arroyo H., Victorino Arroyo T., Julio C. Lopez A., Cristian Losano A. 19-07-2019</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Perfil de la Unidad -->
+<section id="perfil" class="section container py-5">
+    <div class="row">
+        <!-- Columna 1 -->
+        <div class="col-md-6 perfil-col mb-4">
+            <h6 class="section-title mb-3">PERFIL DE LA UNIDAD</h6>
+            <p>
+                Unidad médica de Segundo Nivel de Atención Médica con Medicina Familiar; iniciamos labores el 16 de mayo de 1998,
+                con 6 consultorios de medicina familiar, a partir del 16 de diciembre del 2000 se incluyen 10 camas ambulatorias
+                con 3 especialidades troncales, el 25 de septiembre del 2003 inicia la atención hospitalaria con 25 camas censables,
+                la atención de 4 especialidades troncales.
+            </p>
+            <img src="imagenes/imss2009.PNG" alt="Hospital Apizaco IMSS 2009" class="img-fluid rounded shadow-sm mt-3" />
+            <p class="text-center mt-2">Hospital Apizaco IMSS 2009</p>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="col-md-6 perfil-col mb-4">
+            <p>
+                El 1 de marzo del 2006 se amplía la atención hospitalaria con 52 camas censables y todos los servicios troncales
+                incluyendo la atención en el servicio de Toco-Labor y Expulsión, mejorando la cobertura de atención a la salud,
+                de la población derechohabiente y usuaria Apizaquense y circunvecinos (UMF 19, UMF 20 y UMF 48); así como
+                extensión a la sierra norte de Puebla.
+            </p>
+            <img src="imagenes/imss 2023.png" alt="Hospital Apizaco IMSS 2023" class="img-fluid rounded shadow-sm mt-3" />
+            <p class="text-center mt-2">Hospital Apizaco IMSS 2023</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Contacto / Ubicación -->
+    <section id="contact" class="container-fluid bg-dark text-light border-top py-5">
+        <div class="row g-0">
+            <!-- Mapa -->
+            <div class="col-md-6 px-0" style="min-height: 400px;">
+                <div id="map" style="width: 100%; height: 100%;"></div>
+            </div>
+
+            <!-- Información -->
+            <div class="col-md-6 d-flex flex-column justify-content-center px-5 py-4">
+                <h3 class="mb-4 mt-3">UBICACIÓN GEOGRÁFICA</h3>
+                <p>
+                    El Hospital General de Zona con Medicina Familiar No. 2 (HGZ C/MF No. 2) se encuentra ubicado sobre la calle
+                    de Venustiano Carranza esquina con la Avenida Centenario sin número, perteneciente a la Colonia San Martín de Porres
+                    en la ciudad de Apizaco, Municipio del mismo nombre del Estado de Tlaxcala.
+                </p>
+                <p>
+                    La unidad está ubicada en la zona urbana de la ciudad de Apizaco, construida en una superficie de terreno de
+                    11,314.186 m², superficie construida de 45,474.660 m², además cuenta con una superficie de áreas verdes: 4,826 m²
+                    y una superficie de áreas pétreas: 265.56 m².
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (para componentes interactivos, opcional si no usas JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+            var location = { lat: 19.41029020012185, lng: -98.14964104757264 }; // IMSS Apizaco
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 17,
+                center: location,
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "IMSS Apizaco",
+            });
+        }
+    </script>
+
+
+<script>
+window.addEventListener("scroll", function() {
+    const navbar = document.getElementById("navbar");
+    if(window.scrollY > 50){
+        navbar.classList.add("solid");
+    } else {
+        navbar.classList.remove("solid");
+    }
+});
+</script>
+
+
+
+  
+    <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2></h2>
+      <p></p>
+    </div>
+
+   
+
+    <div class="footer-contact">
+      <h4>Contáctanos</h4>
+     <p>📧 <a href="http://www.imss.gob.mx/" class="link-imss">http://www.imss.gob.mx/</a></p>
+      <p>📞 +52 2414172100</p>
+      <p>📍 San Martin de Porres, San Martín de Porres, 90337 Cdad. de Apizaco, Tlax.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-social">
+      
+      <a href="#"><img src="imagenes/IMSS-Logo-tm.png" alt="Instagram"></a>
+     
+    </div>
+    <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+
+<script>
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+</script>
+</body>
+</html>
